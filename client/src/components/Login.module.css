@@ -1,0 +1,169 @@
+/* Login.module.css */
+
+.header{ 
+  text-align: center;
+}
+
+.loginContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(200deg, rgba(215, 152, 218, 0.737), rgba(142, 114, 198, 0.856));
+  padding: 20px;
+}
+
+.loginBox {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically if needed */
+}
+
+.logoImg {
+  max-width: 150px; 
+  height: auto;
+}
+
+.inputGroup {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.inputGroupInput {
+  width: calc(100% - 30px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.showPassword {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.optionsLink {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.optionsLink:hover {
+  text-decoration: underline;
+}
+
+.buttonn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: #000 ;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.registerLink {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.registerLinkAnchor {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.registerLinkAnchor:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 20px;
+  background-color: white !important; /* Force the background color to white */
+  padding: 1px; /* Optional: add some padding for spacing */
+}
+
+.footerAnchor {
+  color: #007bff !important; /* Force the link color */
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.footerAnchor:hover {
+  text-decoration: underline;
+}
+
+.loginImage {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginImageImg {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Media Queries */
+
+/* Large screens (laptops/desktops) */
+@media (min-width: 1024px) {
+  .loginContainer {
+      flex-direction: row;
+  }
+
+  .loginBox, .loginImage {
+      max-width: 50%;
+      margin: 0;
+  }
+}
+
+/* Medium screens (tablets) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .loginContainer {
+      flex-direction: row;
+  }
+
+  .loginBox, .loginImage {
+      max-width: 50%;
+      margin: 0;
+  }
+}
+
+/* Small screens (phones) */
+@media (max-width: 767px) {
+  .loginContainer {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; /* Center items horizontally */
+  }
+
+  .loginBox {
+      max-width: 90%;
+      margin: 20px 0; /* Vertical margin for spacing */
+  }
+
+  .loginImage {
+      display: none; /* Hide the image on small screens to save space */
+  }
+}

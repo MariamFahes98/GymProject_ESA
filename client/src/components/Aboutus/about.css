@@ -1,0 +1,39 @@
+.sector {
+    clip-path: polygon(100% 0%, 100% 100%, 0% 0%);
+  }
+
+  /* about.css */
+
+@keyframes fadeInSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.image-animation {
+  animation: fadeInSlideUp 1.5s ease-in-out;
+}
+
+/* about.css */
+
+@keyframes moveRightLeft {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(50px); /* Move 50px to the right */
+  }
+  100% {
+    transform: translateX(0); /* Move back to the original position */
+  }
+}
+
+.image-move {
+  animation: moveRightLeft 5s ease-in-out infinite; /* Infinite loop */
+}
+

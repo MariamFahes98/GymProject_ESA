@@ -1,6 +1,8 @@
+//User.js in controlller
 const User = require('../models/User');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
+
 
 //Register Function
 exports.register = async (req, res) => {
@@ -68,8 +70,8 @@ exports.getProfile = async (req, res) => {
 
 exports.updateProfile = async (req, res) => {
   try {
-    const { firstname, lastname, email, password } = req.body;
-    const updatedData = { firstname, lastname, email };
+    const { firstname, lastname, email, password,gender,age,length,weight } = req.body;
+    const updatedData = { firstname, lastname, email ,gender,age,length,weight  };
 
     if (password) {
       const salt = await bcrypt.genSalt(10);
@@ -82,3 +84,15 @@ exports.updateProfile = async (req, res) => {
     res.status(500).json({ message: err.message });
   }
 };
+
+// userController.js
+exports.getAllUsers = async (req, res) => {
+  try {
+    // Fetch all users except the one with the specified email and exclude the password field
+    const users = await User.find({ email: { $ne: 'admin@flexzonegym.com' } }).select('-password');
+    res.status(200).json(users);
+  } catch (err) {
+    res.status(500).json({ message: err.message });
+  }
+};
+

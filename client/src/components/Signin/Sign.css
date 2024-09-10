@@ -1,0 +1,65 @@
+.sign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7vh;
+   
+  }
+  
+
+  .sign-content {
+    display: flex;
+    
+  }
+  
+  /* Button styling */
+  .Sign-button {
+    background-color: #1f1f1f;
+    color: #fff;
+    border: 2px solid #1f1f1f;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+  }
+  .Sign-button1 ,.logout-button {
+    background-color: #f7f7f7;
+    color: #d798da;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 2px solid #f7f7f7;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+  }
+  
+  
+  .Sign-button:hover {
+    background-color: #d798da;
+    border-color: #d798da;
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .Sign-button:active   {
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+.Sign-button1:hover {
+    background-color: #d798da;
+    border-color: #d798da;
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+  

@@ -1,1 +1,22 @@
+:root{
+    --gradiant-color:   linear-gradient(200deg, rgba(215, 152, 218, 0.737), rgba(142, 114, 198, 0.856));
+}
 
+/* Ensure the selected date is always purple */
+.react-calendar .react-calendar__tile--active {
+    background-color: #a855f7 !important; /* Purple color */
+    color: white !important; /* Text color */
+  }
+  
+  /* Ensure the hover effect does not change the background color */
+  .react-calendar .react-calendar__tile--active:enabled:hover {
+    background-color: #a855f7 !important; /* Purple color on hover */
+  }
+  
+  /* Customize today's date color */
+  .react-calendar .react-calendar__tile--now {
+    background-color:#a855f7 !important; /* Pink color */
+    color: white !important; /* Text color */
+    border-radius: 50%;
+  }
+  
