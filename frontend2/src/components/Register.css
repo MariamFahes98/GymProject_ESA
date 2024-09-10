@@ -1,0 +1,263 @@
+/*code responsive*/
+h2 {
+  text-align: center;
+}
+
+.register-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(200deg, rgba(215, 152, 218, 0.737), rgba(142, 114, 198, 0.856));
+  padding: 20px;
+  flex-wrap: wrap; /* Ensure wrapping on smaller screens */
+}
+
+.register-box {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  margin: 20px; /* Margin to avoid touching edges on smaller screens */
+}
+
+.logo {
+  display: flex;
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
+  margin: 0 auto; /* Ajoute une marge automatique pour centrer le logo */
+  width: 100%; /* Assurez-vous que l'élément prend toute la largeur du conteneur */
+}
+
+.logo img {
+  max-width: 150px; 
+  height: auto;
+  display: block; /* Ajoutez display: block pour supprimer tout espace autour de l'image */
+  margin: 0 auto; /* Centre l'image dans son conteneur */
+}
+
+.input-group {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.input-group input,
+.input-group select {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.select-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.login-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 20px;
+  background-color: white !important; /* Force the background color to white */
+  padding: 10px; /* Optional: add some padding for spacing */
+}
+
+.footer a {
+  color: #007bff !important; /* Force the link color */
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.register-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px; /* Margin to avoid touching edges on smaller screens */
+}
+
+.register-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Media Queries */
+
+/* Large screens (laptops/desktops) */
+@media (min-width: 1024px) {
+  .register-container {
+      flex-direction: row;
+  }
+
+  .register-box, .register-image {
+      max-width: 50%;
+      margin: 0;
+  }
+}
+
+/* Medium screens (tablets) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .register-container {
+      flex-direction: row;
+  }
+
+  .register-box, .register-image {
+      max-width: 50%;
+      margin: 0;
+  }
+}
+
+/* Small screens (phones) */
+@media (max-width: 767px) {
+  .register-container {
+      flex-direction: column;
+      justify-content: center;
+  }
+
+  .register-box, .register-image {
+      max-width: 90%;
+      margin: 0 auto;
+  }
+}
+
+
+/* src/Register.css */
+/*hon code no responsive
+h2 {
+    text-align: center;
+  }
+  
+  .register-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(200deg, rgba(215, 152, 218, 0.737), rgba(142, 114, 198, 0.856));
+    padding: 20px;
+  }
+  
+  .register-box {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .logo {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .logo img {
+    max-width: 150px;
+    height: auto;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .input-group input,
+  .input-group select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .select-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .login-link {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .login-link a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .login-link a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .footer a {
+    color: #007bff;
+    text-decoration: none;
+    margin: 0 5px;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
+  .register-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .register-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  */

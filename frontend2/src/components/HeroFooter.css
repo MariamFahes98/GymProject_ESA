@@ -1,0 +1,11 @@
+/* src/components/HeroFooter.css */
+.hero-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .hero-footer > .hero-section {
+    margin-bottom: 0px; /* Ajout d'espace entre les sections */
+  }
+  

@@ -1,0 +1,53 @@
+/* Main container for the information section */
+.Main-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 15vh;
+    width: 100%;
+    max-width: 960px; /* Responsive width */
+    background-color: white; /* Dark background color */
+    margin: 20px auto; /* Center the container and add margin */
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+  }
+  
+  /* Common styles for each information item */
+  .Main-info > div {
+    display: flex;
+    flex-direction: column; /* Stack icon and text vertically */
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    background-color: #ffffff; /* White background for contrast */
+    border-radius: 20px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 23%; /* Adjust width for spacing */
+  }
+  
+  .Main-info > div:hover {
+    background-color: #d798da; /* Background change on hover */
+    transform: translateY(-5px); /* Slight lift on hover */
+  }
+  
+  /* Icon styling */
+  .icon {
+    font-size: 32px; /* Larger icon size */
+    color: #202020; /* Dark icon color */
+    margin-bottom: 8px;
+  }
+  
+  /* Text styling */
+  p {
+    margin: 0;
+    font-size: 18px; /* Slightly larger font size */
+    color: #202020; /* Dark text color */
+    font-weight: 500; /* Medium font weight */
+  }
+  
+  /* Individual item-specific styles, if needed */
+  .Products, .location, .Trainers, .Classes {
+    text-align: center; /* Center-align text */
+  }

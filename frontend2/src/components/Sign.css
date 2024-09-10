@@ -1,0 +1,76 @@
+/* Style général pour le conteneur */
+.sign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7vh;
+}
+
+/* Contenu centré dans le composant Sign */
+.sign-content {
+    display: flex;
+}
+
+/* Style pour la liste de navigation */
+.navbar-menu {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+/* Style commun des boutons */
+.Sign-button, .Sign-button1 {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none; /* Supprimer la sous-ligne */
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+/* Bouton Sign In */
+.Sign-button {
+    background-color: #fffdfd;
+    color: #fff;
+    border: 2px solid #ffffff;
+}
+
+.Sign-button:hover {
+    background-color: #d798da;
+    border-color: #d798da;
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.Sign-button:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Bouton Sign Up */
+.Sign-button1 {
+    background-color: #f7f7f7;
+    color: #d798da;
+    border: 2px solid #f7f7f7;
+}
+
+.Sign-button1:hover {
+    background-color: #d798da;
+    border-color: #d798da;
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.Sign-button1:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

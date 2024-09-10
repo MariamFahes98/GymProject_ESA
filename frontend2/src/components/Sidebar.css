@@ -1,0 +1,163 @@
+/* Style pour la sidebar */
+.sidebar {
+  width: 250px;
+  background-color: #d44dc9; /* Couleur de fond plus sombre */
+  color: white;
+  padding: 20px;
+  height: 100vh; /* Full height */
+  display: flex;
+  flex-direction: column;
+  position: fixed; /* Fixe la sidebar */
+  transition: transform 0.3s ease; /* Animation pour la transition */
+}
+
+/* Style pour le logo */
+.sidebar-logo {
+  text-align: center;
+  margin-bottom: 30px;
+  position: relative; /* Nécessaire pour positionner le pseudo-élément */
+}
+
+.sidebar-logo h2 {
+  font-size: 1.5rem;
+  margin: 0;
+  display: inline-block;
+  animation: moveUpDown 2s ease-in-out infinite, letterMerge 3s ease-in-out infinite; /* Animation combinée */
+  display: inline-block; /* Nécessaire pour l'animation des lettres */
+}
+
+/* Animation de mouvement vertical */
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0); /* Position initiale */
+  }
+  50% {
+    transform: translateY(-10px); /* Déplacement vers le haut */
+  }
+  100% {
+    transform: translateY(0); /* Retour à la position initiale */
+  }
+}
+
+/* Animation de séparation et fusion des lettres */
+@keyframes letterMerge {
+  0% {
+    letter-spacing: 0; /* Espacement initial */
+    transform: scale(1); /* Taille initiale */
+  }
+  50% {
+    letter-spacing: 5px; /* Espacement maximal */
+    transform: scale(1.1); /* Zoom léger */
+  }
+  100% {
+    letter-spacing: 0; /* Retour à l'espacement initial */
+    transform: scale(1); /* Retour à la taille normale */
+  }
+}
+
+/* Style pour les liens */
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar nav ul li {
+  margin: 20px 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Animation pour le survol */
+  border-radius: 5px; /* Coins arrondis */
+}
+
+.sidebar nav ul li:hover {
+  background-color: #380d86; /* Couleur de fond au survol */
+  transform: scale(1.02); /* Légère augmentation au survol */
+}
+
+.sidebar nav ul li a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  width: 100%;
+}
+
+.sidebar nav ul li a:hover {
+  color: #ff6347; /* Changement de couleur au survol */
+}
+
+.sidebar nav ul li svg {
+  margin-right: 10px;
+}
+
+/* Animation de décalage de la sidebar (optionnel) */
+.sidebar.collapsed {
+  transform: translateX(-100%); /* Cache la sidebar hors de l'écran */
+}
+
+/*
+//code vari sans animation
+.sidebar {
+  width: 250px;
+  background-color: #da15a8;
+  color: white;
+  padding: 20px;
+}
+
+.sidebar-logo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar nav ul li {
+  margin: 20px 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar nav ul li:hover {
+  text-decoration: underline;
+}
+
+.sidebar nav ul li svg {
+  margin-right: 10px;
+}
+*/
+
+
+
+/*.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+  }
+  
+  .sidebar-logo {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .sidebar nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar nav ul li {
+    margin: 20px 0;
+    cursor: pointer;
+  }
+  
+  .sidebar nav ul li:hover {
+    text-decoration: underline;
+  }
+  */
+  
