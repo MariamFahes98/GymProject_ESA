@@ -1,0 +1,15 @@
+.dashboard {
+    display: flex;
+  }
+  
+  .sidebar {
+    flex: 0 0 250px;
+    height: 100vh; /* Assurez-vous que la sidebar prend toute la hauteur de l'écran */
+  }
+  
+  .content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f4f4f4; /* Vous pouvez ajuster la couleur de fond */
+  }
+  

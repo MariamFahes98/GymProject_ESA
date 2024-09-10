@@ -1,0 +1,142 @@
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f7f7f7;
+    color: #333333;
+    padding: 15px 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #eaeaea;
+  }
+  
+  
+  .logo1 {
+    display: inline-block;
+    padding: 10px 20px;
+    
+    border-radius: 10px;
+    
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .logo1:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Logo text */
+  .logo1 p {
+    font-family: 'Arial Black', sans-serif;
+    font-size: 2rem;
+    margin: 0;
+    color:linear-gradient(45deg, #d798da, #8e72c6);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Navbar menu list */
+  .navbar-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 30px;
+  }
+  
+  /* Navbar menu items */
+  .navbar-menu li {
+    position: relative;
+  }
+  
+  .navbar-menu li::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: transparent;
+    transition: background 0.3s ease;
+  }
+  
+  .navbar-menu li:hover::after {
+    background: #d798da;
+  }
+  
+  .navbar-menu a {
+    color: #333333;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-menu a:hover {
+    color: #d798da;
+  }
+  
+  /* Navbar actions container */
+  .navbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  /* Search icon */
+  .search-icon {
+    color: #333333;
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .search-icon:hover {
+    color: #d798da;
+  }
+  
+  /* Join Us button */
+  .join-us-button {
+    background-color: #333333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+  }
+  
+  .join-us-button:hover {
+    background-color: #d798da;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px 20px;
+    }
+  
+    .navbar-menu {
+      flex-direction: column;
+      width: 100%;
+      gap: 10px;
+    }
+  
+    .navbar-menu li {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .navbar-actions {
+      margin-top: 10px;
+    }
+  
+    .join-us-button {
+      width: 100%;
+      text-align: center;
+    }
+  }

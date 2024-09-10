@@ -1,0 +1,199 @@
+.footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #FFC0B3; /* Couleur de fond mise à jour */
+  color: white;
+  padding: 50px 20px;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 20px;
+  min-width: 200px;
+}
+
+.footer-logo {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.footer-section h3 {
+  margin-bottom: 20px;
+  color: black; /* Garder les titres en noir pour le contraste */
+}
+/* Spécifique pour les liens dans .logo-section */
+.logo-section a {
+  color: black; /* Couleur des liens en noir */
+  text-decoration: none; /* Supprimer la décoration de texte (soulignement) */
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.logo-section a:hover {
+  color: #4a4a4a; /* Couleur au survol (peut être ajustée) */
+  background-color: transparent; /* Pas de fond au survol */
+}
+.footer-section p,
+.footer-section ul,
+.footer-section li {
+  margin: 10px 0;
+  list-style: none;
+}
+
+/* Ciblage spécifique pour les liens à l'intérieur de .footer-section */
+.footer-section a {
+  color: rgb(168, 5, 133) !important; /* Couleur par défaut des liens en noir */
+  text-decoration: none;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.footer-section a:hover {
+  background-color: #FFC0B3 !important; /* Couleur de fond lors du hover */
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.links-grid {
+  display: flex;
+  justify-content: space-between;
+}
+
+.links-grid ul {
+  margin: 0;
+  padding: 0;
+}
+
+.links-grid ul li {
+  margin: 5px 0;
+}
+
+.gym-hours ul {
+  color: black;
+  padding-left: 0;
+}
+
+.gym-hours li {
+  color: black;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+/* Media Queries */
+
+/* Écrans larges (ordinateurs portables/ordinateurs de bureau) */
+@media (min-width: 1024px) {
+  .footer {
+    flex-direction: row;
+  }
+}
+
+/* Écrans moyens (tablettes) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .footer {
+    flex-direction: row;
+  }
+  
+  .footer-section {
+    flex: 1 1 45%;
+  }
+}
+
+/* Petits écrans (téléphones) */
+@media (max-width: 767px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .footer-section {
+    flex: 1 1 100%;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .links-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+
+/*
+//code 1 vrai
+.footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #333;
+  color: rgb(255, 255, 255);
+  padding: 50px 20px;
+  flex-wrap: wrap; 
+}
+
+.footer-section {
+  flex: 1;
+  padding: 20px;
+  min-width: 200px; 
+}
+
+.footer-logo {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.footer-section h3 {
+  margin-bottom: 20px;
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section li {
+  margin: 10px 0;
+  list-style: none;
+}
+
+.footer-section a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Media Queries */
+
+/* Large screens (laptops/desktops) */
+/*@media (min-width: 1024px) {
+  .footer {
+      flex-direction: row;
+  }
+}*/
+
+/* Medium screens (tablets) */
+/*@media (min-width: 768px) and (max-width: 1023px) {
+  .footer {
+      flex-direction: row;
+  }
+  
+  .footer-section {
+      flex: 1 1 45%;
+  }
+}
+
+/* Small screens (phones) */
+/*
+@media (max-width: 767px) {
+  .footer {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+  }
+
+  .footer-section {
+      flex: 1 1 100%;
+      padding: 10px;
+      text-align: center;
+  }
+}
+*/

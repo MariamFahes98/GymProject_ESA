@@ -1,0 +1,26 @@
+/* MainPage.css */
+
+.main-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f7f7f7;
+  }
+  
+  .infor-section {
+    background-color: white;
+    padding: 20px 0;
+  }
+  
+  footer {
+    background-color: #ffffff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
